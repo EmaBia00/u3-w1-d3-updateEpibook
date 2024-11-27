@@ -3,7 +3,8 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import Welcome from "./components/Welcome";
 import MyFooter from "./components/MyFooter";
-import AllTheBooks from "./components/AllTheBooks";
+import BookList from "./components/BookList";
+import fantasyBooks from "./data/fantasy.json";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div className="flex-grow-1">
         <MyNav />
         <Welcome />
-        <AllTheBooks />
+        <BookList books={fantasyBooks} />
       </div>
       <MyFooter />
     </div>
